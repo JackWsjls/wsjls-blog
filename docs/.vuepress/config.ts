@@ -22,7 +22,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
-  base: '/wsjls/weblog/',
 
   // 主题配置
   themeConfig: {
@@ -131,7 +130,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: '/wsjls/weblog/img/bg1.jpeg',
+      avatar: '/img/bg1.jpeg',
       name: 'Wsjls',
       slogan: "Standing on the gaint's shoulders",
     },
@@ -179,6 +178,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
+    [
+      'meta',
+      {
+        charset: "utf-8"
+      }
+    ],
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
     [
       'meta',
