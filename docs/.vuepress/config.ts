@@ -46,6 +46,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: '运维', link: '/pages/f344d070a1031ef7/' },
           { text: 'PHP', link: '/technology/php/' },
+          { text: '读书笔记', link: '/readbook/' },
         ],
       },
       {
